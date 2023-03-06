@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+    "math"
+)
 
 func PrintLuasPermukaan(radius, tinggi float64) float64 {
 	// your code here
+	luasPermukaan := 2 * math.Pi * radius * (radius + tinggi)
+	return luasPermukaan
 }
 
 func main() {
